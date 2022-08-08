@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/iconfont.js"></script>
+    <script src="js/js.js"></script>
+    <link rel="shortcut icon" href="images/bb.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="login-sign">
+        <div id="login1">
+            <div class="login-left">
+                <img src="images/red.png" alt="">
+            </div>
+            <div class="login-right">
+                <p id="login-right-p">×</p>
+                <div class="login-main">
+                    <div class="login-title">
+                        <a href="">登录/</a>
+                        <a href="">注册</a>
+                    </div>
+                    <div class="phone">
+                        <div class="phone-left">
+                            +86
+                        </div>
+                        <input type="text" class="phone-right" placeholder="请输入手机号">
+                    </div>
+                    <div class="check">
+                        <input type="text" class="check-left" placeholder="请输入验证码">
+                        <div class="check-right">
+                            获取验证码
+                        </div>
+                    </div>
+                    <button>登录/注册</button>
+                    <p class="main-bottom-p">
+                      <span id="use-account">使用账号登录</span>  
+                    </p>
+                    <div class="login-footer">
+                        <span><img src="images/du.png" alt=""></span>
+                        <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                        <span class="login-footer-span"><img src="images/wechat1.png" alt=""></span>
+                        <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="sign">
+            <div class="sign-left">
+                <img src="images/red.png" alt="">
+            </div>
+            <div class="sign-right">
+                <p id="sign-right-p">×</p>
+                <div class="sign-main">
+                    <div class="sign-title">
+                        登录/注册
+                    </div>
+                    <div class="please">
+                        请先在千千音乐APP中设置密码登录
+                    </div>
+                    <div class="account-number">
+                        <input type="text" class="account-number-right" placeholder="请输入账号">
+                    </div>
+                    <div class="passwd">
+                        <input type="text" class="passwd-left" placeholder="请输入密码">
+                    </div>
+                    <button>立即登录</button>
+                    <p class="sign-bottom-p">
+                      <span id="use-phone">使用手机号登录</span>  
+                    </p>
+                    <div class="sign-footer">
+                        <span><img src="images/du.png" alt=""></span>
+                        <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                        <span class="sign-footer-span"><img src="images/wechat1.png" alt=""></span>
+                        <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div class="header-left">
+           <h1>
+            <img src="https://static1-qianqian.91q.com/client/img/4e559b7.png" alt="">
+           </h1>
+           <ul id="header-box">
+            <li class="home-page"><a href="index.html">首页</a></li>
+            <li class="red"><a href="song-list.html">歌单</a></li>
+            <li class="red"><a href="singer-details.html">歌手</a></li>
+            <li class="red"><a href="">VIP</a></li>
+            <li class="white"><a href="details-page.html">音乐盒</a></li>
+            <li class="red"><a href="">客户端</a></li>
+            <li class="white"><a href="">音乐人入驻</a></li>
+           </ul>
+        </div>
+        <div class="header-right">
+            <input type="text" placeholder="请输入歌名、歌词、歌手或专辑">
+            <svg class="icon search" aria-hidden="true">
+                <use xlink:href="#icon-31sousuo"></use>
+              </svg>
+            <span id="header-login">登录/注册</span>
+        </div>
+    </header>
+   
+    <div id="autoplay">
+        <!-- 这里放轮播图片 -->
+        <ul id="box">
+            <li><a href=""><img src="images/zhoushen.png" alt=""></a></li>
+            <li><a href=""><img src="images/dianyin.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/yinshi.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/xuekaiqi.jpg" alt=""></a></li>
+            <li><a href=""><img src="images/shatan.jpg" alt=""></a></li>
+        </ul>
+        <span id="left"><img src="images/bg-left.png" alt=""></span>
+        <span id="right"><img src="images/bg-right.png" alt=""></span>
+    </div>
+    <div class="song-type">
+        <ul>
+            <li id="list"><a href="">流行</a></li>
+            <li id="list"><a href="">摇滚</a></li>
+            <li id="list"><a href="">民谣</a></li>
+            <li id="list"><a href="">电子</a></li>
+            <li id="list"><a href="">影视原声</a></li>
+            <li id="list"><a href="">ACG</a></li>
+            <li id="list"><a href="">新世纪</a></li>
+            <li id="list"><a href="">爵士</a></li>
+            <li id="list"><a href="">古典</a></li>
+            <li id="list"><a href="">乡村</a></li>
+            <li id="list"><a href="">说唱</a></li>
+        </ul>
+        <span><a href="">更多</a></span>
+    </div>
+    <div id="under-song-type">
+        <p>秀动发行</p>
+        <span><a href="">更多</a></span>
+    </div>
+    <div id="xiudong-publishing">
+        <div class="cover">
+            <ul id="box2">
+                <li><a href="vieios.html"><img src="images/1.jpg" alt=""></a>
+                    <p class="pone"> <a href="">Dirt Blood 脏血</a> </p>
+                    <p class="ptwo"><a href="">歪特酸Wwhite3</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2022-06-30</a></p> 
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/2.jpg" alt=""></a>
+                    <p class="pone"><a href="">一首歌</a></p>
+                    <p class="ptwo"><a href="">SHOCKIE/CYCYP30/MR.cold</a></p> 
+                    <p class="pthree"><a href="">发行时间：2022-06-22</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/3.jpg" alt=""></a>
+                    <p class="pone"><a href="">House Of N3mu 眠室舞语</a></p>
+                    <p class="ptwo"><a href="">dopeness/眠</a></p> 
+                    <p class="pthree"><a href="">发行时间：2022-07-23</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/4.jpg" alt=""></a>
+                    <p class="pone"><a href="">Did it</a></p>
+                    <p class="ptwo"><a href="">Neyormous L/</a></p> 
+                    <p class="pthree"><a href="">发行时间：2022-06-30</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/xiudong5.jpg" alt=""></a>
+                    <p class="pone"> <a href="">Man Imported From Mars</a> </p>
+                    <p class="ptwo"><a href="">冰雹HAIL DAMN</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2022-07-31</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/xiudong6.jpg" alt=""></a>
+                    <p class="pone"> <a href="">数据之速(THE SPEED OF DATA)</a> </p>
+                    <p class="ptwo"><a href="">逻辑炸弹Logic Bomb</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2022-06-06</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/xiudong7.jpg" alt=""></a>
+                    <p class="pone"> <a href="">NEVER HAVE I EVER</a> </p>
+                    <p class="ptwo"><a href="">Mantha Ye</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2022-07-30</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/xiudong8.jpg" alt=""></a>
+                    <p class="pone"> <a href="">Game Freestyle</a> </p>
+                    <p class="ptwo"><a href="">Vnoonsave</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2022-08-2</a></p>
+                </li>
+            </ul>
+        </div>
+        <div class="under-cover">
+            <ol id="box3">
+                <li class="current"></li>
+                <li></li>
+            </ol>
+        </div>
+        <span id="cover-left"><img src="images/bg-left.png" alt=""></span>
+        <span id="cover-right"><img src="images/bg-right.png" alt=""></span>
+    </div>
+    <div id="under-song-type">
+        <p>热门歌单</p>
+        <span><a href="">更多</a></span>
+    </div>
+    <div id="hot-song">
+        <div class="hot-song-list">
+            <ul id="box4">
+                <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song1.jpg" alt="">  
+                        </div>
+                     </a>
+                <p>乘风破浪: 宇宙的尽头是姐姐</p>
+                </li>
+                <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song2.jpg" alt="">  
+                        </div>
+                     </a>
+                   <p>『獨立樂隊』夏天的味道，我知道</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                       <div>
+                           <img src="images/song3.jpg" alt="">  
+                       </div>
+                    </a>
+                    <p>盘点一些自带仙气的古风歌曲</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song4.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>父亲节 | 你的肩膀我的远方</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song5.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>胡彦斌：全能唱作人的音乐世界</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song6.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>薛之谦 | 那些悲伤的故事</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song7.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>影视原声 | 再听已是剧中人</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song8.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>重阳节 | 家的避风港湾</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song9.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>自然治愈 | 大自然馈赠的声音礼物</p>
+                   </li>
+                   <li>
+                    <span class="play"><a href=""><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                        <div>
+                            <img src="images/song10.jpg" alt="">  
+                        </div>
+                     </a>
+                     <p>世界读书日：沉浸式阅读BGM</p>
+                   </li>
+            </ul>
+        </div>
+        <div class="under-song-list">
+            <ol id="box5">
+                <li class="current1"></li>
+                <li></li>
+            </ol>
+        </div>
+        <span id="left1"><img src="images/bg-left.png" alt=""></span>
+        <span id="right1"><img src="images/bg-right.png" alt=""></span>
+    </div>
+    <div id="under-song-type">
+        <p>新歌推荐</p>
+        <span><a href="">更多</a></span>
+    </div>
+    <div id="new-song">
+        <div class="new-song-list">
+            <ul id="box6">
+                <li><a href="">
+                    <div >
+                    <img src="images/new-song1.jpg" alt="">
+                </div>
+                <span class="song-info">sorry
+                    <p>欧阳娜娜</p>
+                </span>
+                </a>
+                </li>
+                <li><a href="">
+                    <div>
+                    <img src="images/新歌推荐1.jpg" alt="">
+                </div>
+                <span class="song-info">牵手本初子午线
+                    <p>孙语赛</p>
+                </span>
+                </a>
+                </li>
+                <li><a href="">
+                    <div>
+                    <img src="images/new-song3.jpg" alt="">
+                </div>
+                <span class="song-info">STRONG
+                    <p>何美延HAMY</p>
+                </span>
+                </a>
+                </li>
+                <li><a href="">
+                    <div>
+                    <img src="images/new-song4.jpg" alt="">
+                </div>
+                <span class="song-info">跟我走(With me)
+                    <p>YangYang</p>
+                </span>
+                </a>
+                </li>
+                <li><a href="">
+                    <div>
+                    <img src="images/new-song5.jpg" alt="">
+                </div>
+                <span class="song-info">走
+                    <p>苏勋伦</p>
+                </span>
+                </a>
+                </li>
+                <li><a href="">
+                    <div>
+                    <img src="images/new-song6.jpg" alt="">
+                </div>
+                <span class="song-info">Tell Me Why
+                    <p>赵珈婧芸</p>
+                </span>
+                </a>
+                </li>
+            </ul>
+        </div>
+      <div class="under-new-song">
+        <ol id="box7">
+            <li class="current2"></li>
+        </ol>
+      </div>
+        <span id="left2"><img src="images/bg-left.png" alt=""></span>
+        <span id="right2"><img src="images/bg-right.png" alt=""></span>
+    </div>
+    <div id="under-song-type">
+        <p>热门歌手</p>
+        <span><a href="">更多</a></span>
+    </div>
+    <div class="hot-singer">
+        <ul>
+            <li><a href="">
+                <div><img src="images/hot-singer1.jpg" alt="">
+                </div>
+                <p>高天佐Trouble.Z</p>
+            </a></li>
+            <li><a href="">
+                <div><img src="images/hot-singer2.jpg" alt="">
+                </div>
+                <p>蔡健雅</p>
+            </a></li>
+            <li><a href="">
+                <div><img src="images/hot-singer3.jpg" alt="">
+                </div>
+                <p>金莎</p>
+            </a></li>
+            <li><a href="">
+                <div><img src="images/hot-singer4.jpg" alt="">
+                </div>
+                <p>洛天依   </p>
+            </a></li>
+            <li><a href="">
+                <div><img src="images/hot-singer5.jpg" alt="">
+                </div>
+                <p>Y星人/袁鑫怡</p>
+            </a></li>
+            <li><a href="">
+                <div><img src="images/hot-singer6.jpg" alt="">
+                </div>
+                <p>阿杜</p>
+            </a></li>
+        </ul>
+    </div>
+    <div id="under-song-type">
+        <p>精选视频</p>
+        <span><a href="">更多</a></span>
+    </div>
+    <div id="featured-videos">
+        <div class="videos-list">
+            <ul id="box8">
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video1.jpg" alt=""></div>
+                    <p>Bedtime Story</p>
+                    <span>欧阳娜娜</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/likeyou.jpg" alt=""></div>
+                    <p>喜欢你</p>
+                    <span>王艺瑾</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video2.jpg" alt=""></div>
+                    <p>sorry</p>
+                    <span>欧阳娜娜</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video3.jpg" alt=""></div>
+                    <p>寒鸦戏水</p>
+                    <span>林毛根/中国音乐家大系/林吉衡</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video4.jpg" alt=""></div>
+                    <p>RUBUR 新 EP《Meanwhile…》上线宣传片</p>
+                    <span>RUBUR</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video5.jpg" alt=""></div>
+                    <p>天知道（天谕手游盟友主题曲）</p>
+                    <span>许嵩</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video6.jpg" alt=""></div>
+                    <p>莫莫哒（电影《外太空的莫扎特》推广曲）</p>
+                    <span>南征北战NZBZ</span>
+                </a></li>
+                <li>
+                    <span class="play1"><a href="vedios.html"><img src="images/play.png" alt=""></a></span>
+                    <a href="">
+                    <div><img src="images/video7.jpg" alt=""></div>
+                    <p>新定军山</p>
+                    <span>戴荃</span>
+                </a></li>
+            </ul>
+        </div>
+            <div class="videos-ol">
+                <ol id="box9">
+                    <li class="current3"></li>
+                    <li></li>
+                </ol>
+            </div>
+            <span id="left3"><img src="images/bg-left.png" alt=""></span>
+            <span id="right3"><img src="images/bg-right.png" alt=""></span>
+        </div>
+    </div>
+    <div class="live">
+        <h3>相关直播推荐</h3>
+        <span>你已经被我一个人包围</span>
+    </div>
+    <div class="live-list">
+        <ul>
+            <li><a href="vieios.html"><img src="images/直播1.jpg" alt="">
+                <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+            </a></li>
+            <li><a href="vieios.html"><img src="images/live2.jpg" alt="">
+                <span class="living"><span class="living-spot">.</span>
+                直播中</span>
+            </a>
+            </li>
+            <li><a href="vieios.html"><img src="images/live3.jpg" alt="">
+                <span class="living"><span class="living-spot">.</span>
+                直播中</span>
+            </a>
+            </li>
+            <li><a href="vieios.html"><img src="images/live4.png" alt="">
+                <span class="living"><span class="living-spot">.</span>
+                直播中</span>
+            </a>
+            </li>
+        </ul>
+    </div>
+    <div class="footer1">
+        <div class="footer-main">
+            <div class="main-left">
+                <div class="left-title">
+                    下载千千客户端
+                </div>
+                <div class="left-img">
+                    <ul id="boximg">
+                        <li>
+                            <a href="">
+                                <div><img src="images/安卓.png" alt="">
+                                    <p>Android版</p>
+                                    </div>
+                            <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                                <p>微信扫一扫</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="">
+                        <div><img src="images/iphone.png" alt="">
+                        <p>iphone版</p>
+                    </div>
+                        <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                            <p>微信扫一扫</p>
+                        </span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <div><img src="images/微软.png" alt="">
+                    <p>Window版</p>
+                    </div>
+                    <span></span>
+                </a>
+            </li>
+            <li><a href="">
+                <div><img src="images/mac.png" alt="">
+                <p>MAC版</p>
+                </div>
+                <span></span>
+            </a>
+        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="main-center">
+                <div class="center-title">
+                    关于千千音乐
+                </div>
+                <div class="center-info">
+                    <ul>
+                        <li>
+                            <a href="/feedback">意见反馈</a>
+                        </li>
+                        <li>
+                            <a href="/doc/contact">联系我们</a>
+                        </li>
+                        <li>
+                            <a href="https://www.dmhmusic.com">DMH数字音乐分发平台</a>
+                        </li>
+                        <li>
+                            <a href="">音乐人入驻</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-right">
+                <div class="right-title">
+                    关注千千音乐
+                </div>
+                <div class="right-img">
+                    <ul id="boximg1">
+                        <li>
+                            <a href="http://e.weibo.com/musicbaidu">
+                                <div>
+                                <img src="images/microblog.png" alt="">
+                                <span>关注微博 </span>
+                            </div>
+                            <span></span>
+                            <span></span>
+                        </a>
+                        </li>
+                        <li>
+                            <div>
+                                <img src="images/wechat.png" alt="">
+                               <span href="">微信公众号</span> 
+                               <div id="div-img"><img src="images/微信扫一扫1.jpg" alt="">
+                            <p>微信扫一扫</p>
+                            </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="footer2-main">
+            <div class="footer2-header">
+                Copyright 2018 © .TAIHE MUSIC GROUP. 深圳太乐文化科技有限公司版权所有
+            </div>
+            <div class="footer2-center">
+                <span class="sone">信息网络传播视听许可证: 1910523</span>
+                <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502002309">
+                    <img src="images/gongan.png" alt="">
+                    粤公网安备: 44030502002309号
+                </a>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlicp.jpeg">增值电信业务经营许可证（icp): 粤B2-20180819</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlsp.jpg">增值电信业务经营许可证（sp): B2-20183486</a></span>
+            <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlwlwhjyj.jpeg">网络文化经营许可证号码: 粤网文【2021】0349-058号</a>
+            <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlcbwjy.jpeg">出版物经营许可证: 新出发深零字第0788号</a></span>
+            <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztldszz.jpeg">广播电视节目制作许可证: （粤）字第03091号</a></span>
+            <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlyyxyc.jpeg">营业性演出许可证: 440305120144</a></span>
+        </div>
+        <div class="footer2-footer">
+            <a href="mailto:jubao@taihe.com">举报邮箱: jubao@taihe.com</a>
+            <a href="/feedback">反馈中心</a>
+        </div>
+        </div>
+    </div>
+</body>
+</html> 

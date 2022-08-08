@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>详情页</title>
+        <link rel="stylesheet" href="css/details-page.css">
+        <script src="js/details-page.js"></script>
+    </head>
+    <body>
+        <div id="login-sign">
+            <div id="login1">
+                <div class="login-left">
+                    <img src="images/red.png" alt="">
+                </div>
+                <div class="login-right">
+                    <p id="login-right-p">×</p>
+                    <div class="login-main">
+                        <div class="login-title">
+                            <a href="">登录/</a>
+                            <a href="">注册</a>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-left">
+                                +86
+                            </div>
+                            <input type="text" class="phone-right" placeholder="请输入手机号">
+                        </div>
+                        <div class="check">
+                            <input type="text" class="check-left" placeholder="请输入验证码">
+                            <div class="check-right">
+                                获取验证码
+                            </div>
+                        </div>
+                        <button>登录/注册</button>
+                        <p class="main-bottom-p">
+                          <span id="use-account">使用账号登录</span>  
+                        </p>
+                        <div class="login-footer">
+                            <span><img src="images/du.png" alt=""></span>
+                            <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                            <span class="login-footer-span"><img src="images/wechat1.png" alt=""></span>
+                            <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="sign">
+                <div class="sign-left">
+                    <img src="images/red.png" alt="">
+                </div>
+                <div class="sign-right">
+                    <p id="sign-right-p">×</p>
+                    <div class="sign-main">
+                        <div class="sign-title">
+                            登录/注册
+                        </div>
+                        <div class="please">
+                            请先在千千音乐APP中设置密码登录
+                        </div>
+                        <div class="account-number">
+                            <input type="text" class="account-number-right" placeholder="请输入账号">
+                        </div>
+                        <div class="passwd">
+                            <input type="text" class="passwd-left" placeholder="请输入密码">
+                        </div>
+                        <button>立即登录</button>
+                        <p class="sign-bottom-p">
+                          <span id="use-phone">使用手机号登录</span>  
+                        </p>
+                        <div class="sign-footer">
+                            <span><img src="images/du.png" alt=""></span>
+                            <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                            <span class="sign-footer-span"><img src="images/wechat1.png" alt=""></span>
+                            <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="header-left">
+               <h1>
+                <img src="https://static1-qianqian.91q.com/client/img/4e559b7.png" alt="">
+               </h1>
+               <ul id="header-box">
+                <li class="white"><a href="index.html">首页</a></li>
+                <li class="red"><a href="song-list.html">歌单</a></li>
+                <li class="red"><a href="singer-details.html">歌手</a></li>
+                <li class="red"><a href="">VIP</a></li>
+                <li class="home-page"><a href="">音乐盒</a></li>
+                <li class="red"><a href="">客户端</a></li>
+                <li class="white"><a href="">音乐人入驻</a></li>
+               </ul>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="请输入歌名、歌词、歌手或专辑">
+                <svg class="icon search" aria-hidden="true">
+                    <use xlink:href="#icon-31sousuo"></use>
+                  </svg>
+                <span id="header-login">登录/注册</a></a></span>
+            </div>
+        </header>
+        <div class="main1" id="main1">
+            <div class="main-left1">
+                <div class="main-left1-img">
+                    <img src="images/怪咖.jpg" alt="">
+                </div>
+                <div class="main-left1-font">
+                    <ul>
+                        <li>专辑: <a href="">怪咖</a></li>
+                        <li>发行时间: <a href="">2018-12-31</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="main-right1">
+                <h1>
+                    那是你离开了北京的生活
+                </h1>
+                <p><a href="">薛之谦</a></p>
+                <div class="main-right1-btn">
+                    <ul>
+                        <li><button class="playnow">▶立即播放</button></li>
+                        <li><button class="collect"><a href="">收藏</a></button>
+                        <span><img src="images/收藏.png" alt=""></span>
+                        </li>
+                        <li><button class="share"><a href="">分享</a></button>
+                        <img src="images/分享.png" alt="">
+                        </li>
+                        <li><button class="copylyrics"><span>复制歌词</span></button>
+                        <img src="images/copy.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <div id="lyrics">
+                    <p>那是你离开了北京的生活 - 薛之谦 (Joker)</p><p>词：薛之谦</p><p>曲：方毅</p><p>试着留盏灯假装陪伴失眠的我</p><p>窗口就有等待的效果</p><p>已经习惯摆放好两人份的餐桌</p><p>这样看上去就不寂寞</p><p>那是你离开了北京的生活</p><p>街上的人偶尔会模仿你小动作</p><p>轻而易举就能将我击破</p><p>那些承诺提起人是你 还是我</p><p>那是你离开了北京的生活</p><p>我以为我爱了 就会留下些什么</p><p>纪念那些曲折</p><p>我们快乐的 争吵的 不舍的 分分合合</p><p>我还是撑着 不说 我应该平静的</p><p>面对你离开了北京的生活</p><p>是否有人在对街窥探我的生活</p><p>督促我别过的不快乐</p><p>一晃而过看不清的是你 还是我</p><p>那是你离开了北京的生活</p><p>我以为我疯了 你在提醒我什么</p><p>别再故意招惹</p><p>那些爱过的 美好的 快乐的 不是施舍</p><p>我还是撑着 不说 我可以平静的</p><p>接受你离开了北京的生活</p><p>我以为是规则 失去最爱的一个</p><p>才能记忆深刻</p><p>那些 幼稚的 轻狂的 勇敢的 从此收着</p><p>我还在羡慕什么 街上哭的那个</p><p>你却无比希望他抱住另一个</p><p>那是你离开了北京的生活</p><p>制作人：方毅</p><p>编曲：茶茶</p><p>木吉他：郭一凡</p><p>电吉他：劳国贤</p><p>贝斯：韩阳</p><p>鼓手：武勇恒</p><p>和声：方毅</p><p>和声设计：茶茶 方毅</p><p>弦乐团：国际首席爱乐乐团</p><p>弦乐监制：胡静成</p><p>弦乐录音师：王小四</p><p>弦乐录音室：金田录音棚</p><p>乐器录音师：邢铜</p><p>乐器录音室：55TEC Studio</p><p>人声录音师：汝文博</p><p>人声录音室：BIG.J Studio</p><p>混音师：赵靖</p><p>混音室：BIG.J Studio</p><p>母带：全相彦@OK Mastering Studio</p>
+                </div>
+                <div id="spread-out">
+                    展开
+                </div>
+                <div id="fold">收起</div>
+            </div>
+        </div>
+
+        <div class="live">
+            <h3>相关直播推荐</h3>
+            <span>你已经被我一个人包围</span>
+        </div>
+        <div class="live-list">
+            <ul>
+                <li><a href="vieios.html"><img src="images/直播1.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                        直播中</span>
+                </a></li>
+                <li><a href="vieios.html"><img src="images/live2.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+                <li><a href="vieios.html"><img src="images/live3.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+                <li><a href="vieios.html"><img src="images/live4.png" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer1">
+            <div class="footer-main">
+                <div class="main-left">
+                    <div class="left-title">
+                        下载千千客户端
+                    </div>
+                    <div class="left-img">
+                        <ul id="boximg">
+                            <li>
+                                <a href="">
+                                    <div><img src="images/安卓.png" alt="">
+                                        <p>Android版</p>
+                                        </div>
+                                <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                                    <p>微信扫一扫</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                            <div><img src="images/iphone.png" alt="">
+                            <p>iphone版</p>
+                        </div>
+                            <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                                <p>微信扫一扫</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="">
+                        <div><img src="images/微软.png" alt="">
+                        <p>Window版</p>
+                        </div>
+                        <span></span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <div><img src="images/mac.png" alt="">
+                    <p>MAC版</p>
+                    </div>
+                    <span></span>
+                </a>
+            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="main-center">
+                    <div class="center-title">
+                        关于千千音乐
+                    </div>
+                    <div class="center-info">
+                        <ul>
+                            <li>
+                                <a href="/feedback">意见反馈</a>
+                            </li>
+                            <li>
+                                <a href="/doc/contact">联系我们</a>
+                            </li>
+                            <li>
+                                <a href="https://www.dmhmusic.com">DMH数字音乐分发平台</a>
+                            </li>
+                            <li>
+                                <a href="">音乐人入驻</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-title">
+                        关注千千音乐
+                    </div>
+                    <div class="right-img">
+                        <ul id="boximg1">
+                            <li>
+                                <a href="http://e.weibo.com/musicbaidu">
+                                    <div>
+                                    <img src="images/microblog.png" alt="">
+                                    <span>关注微博 </span>
+                                </div>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="images/wechat.png" alt="">
+                                   <span href="">微信公众号</span> 
+                                   <div id="div-img"><img src="images/微信扫一扫1.jpg" alt="">
+                                <p>微信扫一扫</p>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2-main">
+                <div class="footer2-header">
+                    Copyright 2018 © .TAIHE MUSIC GROUP. 深圳太乐文化科技有限公司版权所有
+                </div>
+                <div class="footer2-center">
+                    <span class="sone">信息网络传播视听许可证: 1910523</span>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502002309">
+                        <img src="images/gongan.png" alt="">
+                        粤公网安备: 44030502002309号
+                    </a>
+                    <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlicp.jpeg">增值电信业务经营许可证（icp): 粤B2-20180819</a></span>
+                    <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlsp.jpg">增值电信业务经营许可证（sp): B2-20183486</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlwlwhjyj.jpeg">网络文化经营许可证号码: 粤网文【2021】0349-058号</a>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlcbwjy.jpeg">出版物经营许可证: 新出发深零字第0788号</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztldszz.jpeg">广播电视节目制作许可证: （粤）字第03091号</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlyyxyc.jpeg">营业性演出许可证: 440305120144</a></span>
+            </div>
+            <div class="footer2-footer">
+                <a href="mailto:jubao@taihe.com">举报邮箱: jubao@taihe.com</a>
+                <a href="/feedback">反馈中心</a>
+            </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>注册</title>
+    </head>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .sign{
+            width: 640px;
+            height: 460px;
+            background: #1f1f1f;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .sign-left{
+            width: 220px;
+            height: 460px;
+            /* background: gold; */
+            float: left;
+        }
+        .sign-left img{
+            width: 220px;
+            height: 460px;
+        }
+        .sign-right{
+            float: right;
+            width: 420px;
+            height: 460px;
+            /* background: khaki; */
+        }
+        .sign-right-p{
+            font-size: 35px;
+            margin-top: 10px;
+            float: right;
+            margin-right: 20px;
+            cursor: pointer;
+        }
+        .sign-main{
+            width: 340px;
+            height:310px;
+            margin-left: auto;
+            margin-right: auto;
+            /* background: green; */
+            margin-top: 50%;
+            transform: translateY(-50%);
+        }
+        .sign-title{
+            color: white;
+            font-size: 20px;
+        }
+        .please{
+            color: #909399;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .account-number{
+            width: 340px;
+            height: 50px;
+            /* background: pink; */
+            margin-top: 20px;
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+        .account-number-right{
+            float: right;
+            background: #1f1f1f;;
+            outline: none;
+            border: none;
+            width: 315px;
+            height: 50px;
+            border-top-right-radius: 8px;
+            border-bottom-right-radius: 8px;
+            padding-left: 20px;
+            font-size: 15px;
+            color: white;
+        }
+        .passwd{
+            width: 340px;
+            height: 50px;
+            margin-top: 20px;
+            /* background: pink; */
+            border-radius: 8px;
+            border: 1px solid gray;
+        }
+        .passwd-left{
+            width: 315px;
+            height: 50px;
+            float: left;
+            background: #1f1f1f;
+            border-top-left-radius: 8px ;
+            border-bottom-left-radius: 8px;
+            border-right: 1px solid gray;
+            border: none;
+            outline: none;
+            padding-left: 20px;
+            font-size: 15px;
+            color: white;
+        }
+        
+        .sign-main button{
+            width: 340px;
+            height: 50px;
+            margin-top: 20px;
+            background: #e61723;
+            border: none;
+            color: white;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .sign-main p{
+            width: 340px;
+            height: 20px;
+            margin-top: 20px;
+        }
+         .sign-bottom-p span{
+            color: #909399;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .sign-footer{
+            width: 340px;
+            height: 30px;
+            background: #1f1f1f;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 30px;
+        }
+        .sign-footer img{
+            width: 22px;
+            height: 22px;
+            vertical-align: middle;
+        }
+        .sign-footer a{
+            text-decoration: none;
+            color: #909399;
+            font-size: 15px;
+            line-height: 30px;
+        }
+        .sign-footer-span{
+            margin-left: 45px;
+        }
+        .sign-footer a:hover{
+            color: red;
+        }
+    </style>
+    <body>
+        <div class="sign">
+            <div class="sign-left">
+                <img src="images/red.png" alt="">
+            </div>
+            <div class="sign-right">
+                <p class="sign-right-p">×</p>
+                <div class="sign-main">
+                    <div class="sign-title">
+                        登录/注册
+                    </div>
+                    <div class="please">
+                        请先在千千音乐APP中设置密码登录
+                    </div>
+                    <div class="account-number">
+                        <input type="text" class="account-number-right" placeholder="请输入账号">
+                    </div>
+                    <div class="passwd">
+                        <input type="text" class="passwd-left" placeholder="请输入密码">
+                    </div>
+                    <button>立即登录</button>
+                    <p class="sign-bottom-p">
+                      <span>使用手机号登录</span>  
+                    </p>
+                    <div class="sign-footer">
+                        <span><img src="images/du.png" alt=""></span>
+                        <a href="">百度账号登录</a>
+                        <span class="sign-footer-span"><img src="images/wechat1.png" alt=""></span>
+                        <a href="">微信登录</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </body>
+</html>

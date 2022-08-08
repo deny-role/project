@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>歌手详情</title>
+        <script src="js/iconfont.js"></script>
+        <script src="js/singer-details.js"></script>
+        <link rel="stylesheet" href="css/singer-details.css">
+    </head>
+    <body>
+        <div id="login-sign">
+            <div id="login1">
+                <div class="login-left">
+                    <img src="images/red.png" alt="">
+                </div>
+                <div class="login-right">
+                    <p id="login-right-p">×</p>
+                    <div class="login-main">
+                        <div class="login-title">
+                            <a href="">登录/</a>
+                            <a href="">注册</a>
+                        </div>
+                        <div class="phone">
+                            <div class="phone-left">
+                                +86
+                            </div>
+                            <input type="text" class="phone-right" placeholder="请输入手机号">
+                        </div>
+                        <div class="check">
+                            <input type="text" class="check-left" placeholder="请输入验证码">
+                            <div class="check-right">
+                                获取验证码
+                            </div>
+                        </div>
+                        <button>登录/注册</button>
+                        <p class="main-bottom-p">
+                          <span id="use-account">使用账号登录</span>  
+                        </p>
+                        <div class="login-footer">
+                            <span><img src="images/du.png" alt=""></span>
+                            <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                            <span class="login-footer-span"><img src="images/wechat1.png" alt=""></span>
+                            <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+            <div id="sign">
+                <div class="sign-left">
+                    <img src="images/red.png" alt="">
+                </div>
+                <div class="sign-right">
+                    <p id="sign-right-p">×</p>
+                    <div class="sign-main">
+                        <div class="sign-title">
+                            登录/注册
+                        </div>
+                        <div class="please">
+                            请先在千千音乐APP中设置密码登录
+                        </div>
+                        <div class="account-number">
+                            <input type="text" class="account-number-right" placeholder="请输入账号">
+                        </div>
+                        <div class="passwd">
+                            <input type="text" class="passwd-left" placeholder="请输入密码">
+                        </div>
+                        <button>立即登录</button>
+                        <p class="sign-bottom-p">
+                          <span id="use-phone">使用手机号登录</span>  
+                        </p>
+                        <div class="sign-footer">
+                            <span><img src="images/du.png" alt=""></span>
+                            <a target="_blank" href="https://openapi.baidu.com/oauth/2.0/authorize?response_type=code&client_id=WPrz6tsVWoQbDhYhTtMiXtM4&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dbaidu">百度账号登录</a>
+                            <span class="sign-footer-span"><img src="images/wechat1.png" alt=""></span>
+                            <a target="_blank" href="https://open.weixin.qq.com/connect/qrconnect?appid=wxde1ddeb8ea5bd75a&response_type=code&scope=snsapi_login&state=1590132034709&redirect_uri=https%3A%2F%2Fmusic.91q.com%3Ffrom%3Dweixin">微信登录</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="header-left">
+               <h1>
+                <img src="https://static1-qianqian.91q.com/client/img/4e559b7.png" alt="">
+               </h1>
+               <ul id="header-box">
+                <li class="red"><a  href="index.html">首页</a></li>
+                <li class="red"><a href="song-list.html">歌单</a></li>
+                <li class="home-page"><a href="singer-details.html">歌手</a></li>
+                <li class="red"><a href="">VIP</a></li>
+                <li class="white"><a href="details-page.html">音乐盒</a></li>
+                <li class="red"><a href="">客户端</a></li>
+                <li class="white"><a href="">音乐人入驻</a></li>
+               </ul>
+            </div>
+            <div class="header-right">
+                <input type="text" placeholder="请输入歌名、歌词、歌手或专辑">
+                <svg class="icon search" aria-hidden="true">
+                    <use xlink:href="#icon-31sousuo"></use>
+                  </svg>
+                <span id="header-login">登录/注册</a></a></span>
+            </div>
+        </header>
+        <div class="under-header">
+            <div class="detail-box">
+                <div class="detail-img">
+                    <img src="images/林俊杰.jpg" alt="">
+                </div>
+                <div class="detail-right">
+                    <h1>林俊杰</h1>
+                    <p>林俊杰</p>
+                    <div class="details">
+                        2003年，发行首张全创作专辑《乐行者》。虽然时逢SARS，但他和团队不轻言放弃，在3个月内走遍26个城市，进行了上百场演出，奠定了之后在中国大陆的稳固基础。<br><br>2004年，游走大陆，让从小接受英语教育的林俊杰首次体验中华文化所带来的冲击，结合西方R&amp;B现代曲风以及中国风的《江南》（台版为《第二天堂》）专辑由此诞生，同年更凭借《乐行者》专辑拿下第15届台湾金曲奖最佳新人奖。<br><br>2005年，赴美国LA向音乐大师Seth Riggs学习唱歌技巧，同时林俊杰也成为Seth Riggs的第一位亚洲学生；3月25日，发行第三张创作专辑《编号89757》， <br><br>2006年，1月20日，发行首部音乐视觉写真书《进化论》，1月28日，登上中国中央电视台春节联欢晚会（央视春晚）舞台献唱《一千年以后》<br><br>2007年，以人性的善恶纠结为基础，大胆推出更具突破性的专辑《西界》<br><br>2008年，首次主演网络小说改编的偶像剧《原来我不帅》；10月18日，发行具有最多“合作元素”的专辑《JJ陆》，与蔡卓妍合唱的《小酒窝》广为传唱<br><br><br>2011年，4月底，与老东家海蝶音乐合约到期；8月8日，加盟华纳唱片，开启新乐章；9月30日，由林俊杰担任音乐总监的电影《夏日乐悠悠》上映，除了创作主题曲《Love U U》，同时还负责全片的配乐工作；12月31日，推出第九张创作专辑《学不会》。<br><br>2012年，3月1日，推出首本个人故事影像集《记得》，跻身畅销作家行列；凭借专辑《学不会》斩获各大奖项，深拓台湾市场。<br><br>2013年，3月13日，发行出道十年纪念专辑《因你而在》，成绩斐然，，年终销量在榜单独占鳌头；专辑中的《修炼爱情》获得Hit Fm年度百首单曲票选冠军<br> <br>2014年，2月16日，“时线Timeline世界巡回演唱会”登陆伦敦，林俊杰成为首位在伦敦开个唱的新加坡歌手； <br>By Dr.Dre耳机全球代言人，广告登陆纽约时代广场；1月10日，“时线Timeline世界巡回演唱会”在青岛落幕，横跨4大洲、24个城市，突破30万人次 <br><br>代表作品<br>就是我，2003年专辑《乐行者》<br>一千年以后，2005年专辑《编号89757》<br>小酒窝，2008年专辑《JJ陆》<br>我还想她，2008年专辑《JJ陆》<br><br>主要成就  <br>2015 第15届全球华语歌曲排行榜 最佳作曲人    可惜没如果    （获奖）    <br>2015 第15届全球华语歌曲排行榜 年度20大金曲    可惜没如果    （获奖）    <br>2015 第20届新加坡词曲版权协会奖 最佳本地歌手    （获奖）    <br>2015 第20届新加坡词曲版权协会奖 最佳本地歌曲创作人    （获奖）    <br>2015 第13届MusicRadio中国TOP排行榜 年度最佳男歌手（港台）    （获奖）    <br>2015 第05届全球流行音乐金榜 UFM100.3年度电台推崇大奖    （获奖）    <br>2015 第05届全球流行音乐金榜 年度20大金曲    新地球    （获奖）    <br>2015 第05届全球流行音乐金榜 年度最受欢迎男歌手    （获奖）    <br>2015 第05届全球流行音乐金榜 年度最佳制作人     （获奖）          <br>2014 第07届城市至尊音乐榜 年度至尊男歌手    （获奖）    <br>2014 第07届城市至尊音乐榜 联盟台点播冠军王   （获奖）    <br>2014 第07届城市至尊音乐榜 平面传媒推荐年度最佳制作人    （获奖）    <br>2014 第07届城市至尊音乐榜 年度20大金曲    修炼爱情    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 最佳男歌手    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 2013年度百首单曲冠军    修炼爱情    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 年度十大华语歌曲    修炼爱情    （获奖）    <br>2014 第06届新加坡e乐大赏 最佳本地专辑    因你而在    （获奖）    <br>2014 第06届新加坡e乐大赏 最佳男歌手     （获奖）    <br>2014 第06届新加坡e乐大赏 人气本地歌手    （获奖）     <br>2014 第02届音悦V榜年度盛典 港台最佳男歌手    （获奖）    <br>2014 第02届音悦V榜年度盛典 最具影响力歌手    （获奖）    <br>2014 第02届音悦V榜年度盛典 最佳创作歌手    （获奖）       <br>2014 第01届QQ音乐年度盛典 港台最佳男歌手    （获奖）    <br>2013 第18届新加坡金曲奖 最佳专辑制作人    （获奖）    <br>2013 第13届全球华语歌曲排行榜 年度20大金曲    修炼爱情    （获奖）    <br>2013 第08届KKBOX数位音乐风云榜 十大风云歌手    （获奖）    <br>2012 第12届全球华语歌曲排行榜 最受欢迎男歌手五强    （获奖）    <br>2012 第12届全球华语歌曲排行榜 年度20大金曲    学不会    （获奖）    <br>2012 第12届全球华语歌曲排行榜 全能艺人    （获奖）    <br>2012 第12届全球华语歌曲排行榜 最佳专辑    学不会    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 亚洲人气偶像    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 热爆K歌    学不会    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 亚洲创作歌手    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 制作人大奖    （获奖）    <br>2012 第04届新加坡e乐大赏 最佳本地歌手    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 年度华语歌曲    她说    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 Hito长寿专辑(霸榜17周)    她说    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 Hito男歌手    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度金曲    学不会    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳制作人(港台)    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳作曲    学不会    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳男歌手(港台)    （获奖）    <br>2012 第16届全球华语音乐榜中榜 港台最佳创作歌手    （获奖）    <br>2012 第16届全球华语音乐榜中榜 最佳男歌手(台湾地区)    （获奖）    <br>2011 第01届全球流行音乐金榜 年度最佳制作人    （获奖）    <br>2011 第01届全球流行音乐金榜 新加坡电台1003推崇大奖    （获奖）    <br>2011 第03届新加坡e乐大赏 最佳本地歌手    （获奖）    <br>2011 第03届新加坡e乐大赏 最佳本地专辑    她说    （获奖）    <br>2011 第02届MY Astro至尊流行榜颁奖典礼 至尊金曲    背对背拥抱    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最佳男歌手    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最受欢迎男歌手五强    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最受欢迎创作歌手    （获奖）    <br>2010 第10届全球华语歌曲排行榜 新加坡杰出歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 港台地区最受欢迎男歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 最佳专辑    100天    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 港台地区最佳唱作歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 红毯风尚大奖    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 十大金曲    背对背拥抱    （获奖）    <br>2010 第16届新加坡金曲奖 最佳演绎男歌手    （获奖）    <br>2010 第02届新加坡e乐大赏 人气本地歌手    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 海外杰出男歌手    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 十大专辑    编号89757    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 票选创作歌手    （获奖）    <br>2006 第01届KKBOX数位音乐风云榜 十大风云歌手    （获奖）    <br>2006 第04届台湾Hito流行音乐奖 年度Hito海外歌手(新加坡)    （获奖）    <br>2006 第04届台湾Hito流行音乐奖 年度十大歌曲    简简单单    （获奖）    <br>2005 第05届全球华语歌曲排行榜 新加坡地区杰出艺人奖    （获奖）    <br>2005 第07届CCTV-MTV音乐盛典 年度最佳单曲    一千年以后    （获奖）    <br>2005 第02届劲歌王总选 网络人气男歌手    （获奖）    <br>2005 第02届劲歌王总选 劲歌唱作人王    （获奖）    <br>2005 第02届劲歌王总选 十大国语金曲    江南    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度金曲    江南    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度最佳创作歌手    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度最佳作曲    江南    （获奖）    <br>2005 第04届“百事”音乐风云榜 港台十大金曲    江南    （获奖）    <br>2005 第12届中国歌曲排行榜(中歌榜) 最受欢迎港台地区歌曲    江南    （获奖）    <br>2005 第12届中国歌曲排行榜(中歌榜) 港台年度最佳创作歌手    （获奖）    <br>2005 第03届台湾Hito流行音乐奖 年度Hito十大华语歌曲    江南    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 最佳编曲    江南    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 最佳制作奖    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 海外最佳创作人    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 港台地区最受欢迎男歌手    （获奖）    <br>2004 第02届东南劲爆音乐榜 港台劲爆最佳新锐创作人    （获奖）    <br>2004 第02届东南劲爆音乐榜 港台劲爆十大金曲    江南    （获奖）    <br>2004 第11届新加坡金曲奖 最佳本地作曲    江南    （获奖）    <br>2004 第04届全球华语歌曲排行榜 年度最受欢迎20大金曲    江南    （获奖）    <br>2004 第02届MusicRadio中国TOP排行榜 港台最受欢迎新人    （获奖）
+                    </div>
+                        <span id="more">更多></span>
+                        <div class="details-btn">
+                            <button><a href="">收藏</a> </button>
+                            <img src="images/收藏.png" alt="">
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="body-background" id="spread">
+            <div class="spread" >
+                <div class="singer-name">
+                <span class="name-left">林俊杰</span> 
+                <span id="name-right">×</span>
+             </div> 
+                 <div class="spread-describe">
+                     林俊杰 <br>
+                     2003年，发行首张全创作专辑《乐行者》。虽然时逢SARS，但他和团队不轻言放弃，在3个月内走遍26个城市，进行了上百场演出，奠定了之后在中国大陆的稳固基础。<br><br>2004年，游走大陆，让从小接受英语教育的林俊杰首次体验中华文化所带来的冲击，结合西方R&amp;B现代曲风以及中国风的《江南》（台版为《第二天堂》）专辑由此诞生，同年更凭借《乐行者》专辑拿下第15届台湾金曲奖最佳新人奖。<br><br>2005年，赴美国LA向音乐大师Seth Riggs学习唱歌技巧，同时林俊杰也成为Seth Riggs的第一位亚洲学生；3月25日，发行第三张创作专辑《编号89757》， <br><br>2006年，1月20日，发行首部音乐视觉写真书《进化论》，1月28日，登上中国中央电视台春节联欢晚会（央视春晚）舞台献唱《一千年以后》<br><br>2007年，以人性的善恶纠结为基础，大胆推出更具突破性的专辑《西界》<br><br>2008年，首次主演网络小说改编的偶像剧《原来我不帅》；10月18日，发行具有最多“合作元素”的专辑《JJ陆》，与蔡卓妍合唱的《小酒窝》广为传唱<br><br><br>2011年，4月底，与老东家海蝶音乐合约到期；8月8日，加盟华纳唱片，开启新乐章；9月30日，由林俊杰担任音乐总监的电影《夏日乐悠悠》上映，除了创作主题曲《Love U U》，同时还负责全片的配乐工作；12月31日，推出第九张创作专辑《学不会》。<br><br>2012年，3月1日，推出首本个人故事影像集《记得》，跻身畅销作家行列；凭借专辑《学不会》斩获各大奖项，深拓台湾市场。<br><br>2013年，3月13日，发行出道十年纪念专辑《因你而在》，成绩斐然，，年终销量在榜单独占鳌头；专辑中的《修炼爱情》获得Hit Fm年度百首单曲票选冠军<br> <br>2014年，2月16日，“时线Timeline世界巡回演唱会”登陆伦敦，林俊杰成为首位在伦敦开个唱的新加坡歌手； <br>By Dr.Dre耳机全球代言人，广告登陆纽约时代广场；1月10日，“时线Timeline世界巡回演唱会”在青岛落幕，横跨4大洲、24个城市，突破30万人次 <br><br>代表作品<br>就是我，2003年专辑《乐行者》<br>一千年以后，2005年专辑《编号89757》<br>小酒窝，2008年专辑《JJ陆》<br>我还想她，2008年专辑《JJ陆》<br><br>主要成就  <br>2015 第15届全球华语歌曲排行榜 最佳作曲人    可惜没如果    （获奖）    <br>2015 第15届全球华语歌曲排行榜 年度20大金曲    可惜没如果    （获奖）    <br>2015 第20届新加坡词曲版权协会奖 最佳本地歌手    （获奖）    <br>2015 第20届新加坡词曲版权协会奖 最佳本地歌曲创作人    （获奖）    <br>2015 第13届MusicRadio中国TOP排行榜 年度最佳男歌手（港台）    （获奖）    <br>2015 第05届全球流行音乐金榜 UFM100.3年度电台推崇大奖    （获奖）    <br>2015 第05届全球流行音乐金榜 年度20大金曲    新地球    （获奖）    <br>2015 第05届全球流行音乐金榜 年度最受欢迎男歌手    （获奖）    <br>2015 第05届全球流行音乐金榜 年度最佳制作人     （获奖）          <br>2014 第07届城市至尊音乐榜 年度至尊男歌手    （获奖）    <br>2014 第07届城市至尊音乐榜 联盟台点播冠军王   （获奖）    <br>2014 第07届城市至尊音乐榜 平面传媒推荐年度最佳制作人    （获奖）    <br>2014 第07届城市至尊音乐榜 年度20大金曲    修炼爱情    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 最佳男歌手    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 2013年度百首单曲冠军    修炼爱情    （获奖）    <br>2014 第12届台湾Hito流行音乐奖 年度十大华语歌曲    修炼爱情    （获奖）    <br>2014 第06届新加坡e乐大赏 最佳本地专辑    因你而在    （获奖）    <br>2014 第06届新加坡e乐大赏 最佳男歌手     （获奖）    <br>2014 第06届新加坡e乐大赏 人气本地歌手    （获奖）     <br>2014 第02届音悦V榜年度盛典 港台最佳男歌手    （获奖）    <br>2014 第02届音悦V榜年度盛典 最具影响力歌手    （获奖）    <br>2014 第02届音悦V榜年度盛典 最佳创作歌手    （获奖）       <br>2014 第01届QQ音乐年度盛典 港台最佳男歌手    （获奖）    <br>2013 第18届新加坡金曲奖 最佳专辑制作人    （获奖）    <br>2013 第13届全球华语歌曲排行榜 年度20大金曲    修炼爱情    （获奖）    <br>2013 第08届KKBOX数位音乐风云榜 十大风云歌手    （获奖）    <br>2012 第12届全球华语歌曲排行榜 最受欢迎男歌手五强    （获奖）    <br>2012 第12届全球华语歌曲排行榜 年度20大金曲    学不会    （获奖）    <br>2012 第12届全球华语歌曲排行榜 全能艺人    （获奖）    <br>2012 第12届全球华语歌曲排行榜 最佳专辑    学不会    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 亚洲人气偶像    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 热爆K歌    学不会    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 亚洲创作歌手    （获奖）    <br>2012 第11届香港新城国语力颁奖典礼 制作人大奖    （获奖）    <br>2012 第04届新加坡e乐大赏 最佳本地歌手    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 年度华语歌曲    她说    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 Hito长寿专辑(霸榜17周)    她说    （获奖）    <br>2012 第10届台湾Hito流行音乐奖 Hito男歌手    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度金曲    学不会    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳制作人(港台)    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳作曲    学不会    （获奖）    <br>2012 第10届MusicRadio中国TOP排行榜 年度最佳男歌手(港台)    （获奖）    <br>2012 第16届全球华语音乐榜中榜 港台最佳创作歌手    （获奖）    <br>2012 第16届全球华语音乐榜中榜 最佳男歌手(台湾地区)    （获奖）    <br>2011 第01届全球流行音乐金榜 年度最佳制作人    （获奖）    <br>2011 第01届全球流行音乐金榜 新加坡电台1003推崇大奖    （获奖）    <br>2011 第03届新加坡e乐大赏 最佳本地歌手    （获奖）    <br>2011 第03届新加坡e乐大赏 最佳本地专辑    她说    （获奖）    <br>2011 第02届MY Astro至尊流行榜颁奖典礼 至尊金曲    背对背拥抱    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最佳男歌手    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最受欢迎男歌手五强    （获奖）    <br>2010 第10届全球华语歌曲排行榜 最受欢迎创作歌手    （获奖）    <br>2010 第10届全球华语歌曲排行榜 新加坡杰出歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 港台地区最受欢迎男歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 最佳专辑    100天    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 港台地区最佳唱作歌手    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 红毯风尚大奖    （获奖）    <br>2010 第08届东南劲爆音乐榜颁奖典礼 十大金曲    背对背拥抱    （获奖）    <br>2010 第16届新加坡金曲奖 最佳演绎男歌手    （获奖）    <br>2010 第02届新加坡e乐大赏 人气本地歌手    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 海外杰出男歌手    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 十大专辑    编号89757    （获奖）    <br>2006 第01届华众曲宠-TVBS华语金曲榜 票选创作歌手    （获奖）    <br>2006 第01届KKBOX数位音乐风云榜 十大风云歌手    （获奖）    <br>2006 第04届台湾Hito流行音乐奖 年度Hito海外歌手(新加坡)    （获奖）    <br>2006 第04届台湾Hito流行音乐奖 年度十大歌曲    简简单单    （获奖）    <br>2005 第05届全球华语歌曲排行榜 新加坡地区杰出艺人奖    （获奖）    <br>2005 第07届CCTV-MTV音乐盛典 年度最佳单曲    一千年以后    （获奖）    <br>2005 第02届劲歌王总选 网络人气男歌手    （获奖）    <br>2005 第02届劲歌王总选 劲歌唱作人王    （获奖）    <br>2005 第02届劲歌王总选 十大国语金曲    江南    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度金曲    江南    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度最佳创作歌手    （获奖）    <br>2005 第03届MusicRadio中国TOP排行榜 港台年度最佳作曲    江南    （获奖）    <br>2005 第04届“百事”音乐风云榜 港台十大金曲    江南    （获奖）    <br>2005 第12届中国歌曲排行榜(中歌榜) 最受欢迎港台地区歌曲    江南    （获奖）    <br>2005 第12届中国歌曲排行榜(中歌榜) 港台年度最佳创作歌手    （获奖）    <br>2005 第03届台湾Hito流行音乐奖 年度Hito十大华语歌曲    江南    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 最佳编曲    江南    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 最佳制作奖    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 海外最佳创作人    （获奖）    <br>2004 第03届“雪碧”中国原创音乐流行榜 港台地区最受欢迎男歌手    （获奖）    <br>2004 第02届东南劲爆音乐榜 港台劲爆最佳新锐创作人    （获奖）    <br>2004 第02届东南劲爆音乐榜 港台劲爆十大金曲    江南    （获奖）    <br>2004 第11届新加坡金曲奖 最佳本地作曲    江南    （获奖）    <br>2004 第04届全球华语歌曲排行榜 年度最受欢迎20大金曲    江南    （获奖）    <br>2004 第02届MusicRadio中国TOP排行榜 港台最受欢迎新人    （获奖）
+                 </div>
+                 
+             </div>
+        </div>
+      
+   
+        <div class="list-header">
+            <div class="work">
+                作品
+            </div>
+            <div class="work-right">
+                <ul id="box">
+                    <li class="li-one" id="li-one">热门单曲35</li>
+                    <li id="li-two">专辑11</li>
+                </ul>
+            </div>
+        </div>
+        <div id="song-box">
+           <button>▶播放全部</button>
+           <div id="under-play">
+           <table >
+            <thead>
+            <tr>
+                 <th>序号</th>
+                <th>歌曲</th>
+                <th>歌手</th>
+                <th>专辑</th>
+                <th>时长</th>
+            </tr>
+            </thead>
+            <tbody>
+ 
+            <tr>
+                <td>1</td>
+                <td><a href="details-page.html">背对背拥抱</a>
+                <span class="td-img"><img src="images/vip.png" alt=""></span>
+                </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>03:54 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td><a href="details-page.html">爱不会绝迹</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:00 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td><a href="details-page.html">加油</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>03:47 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td><a href="details-page.html">期待爱</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰/金莎</a></td>
+                <td><a href="">《期待爱》</a></td>
+                <td><p>03:51 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td><a href="details-page.html">杀手</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:53 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td><a href="details-page.html">第几个100天</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:33 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td><a href="details-page.html">不流泪的机场</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:48 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td><a href="details-page.html">西界</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:55 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td><a href="details-page.html">背对背拥抱（《HOLD住爱》主题曲）</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《《HOLD住爱》影视原声》</a></td>
+                <td><p>03:54 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td><a href="details-page.html">梦想的翅膀</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰/</a>
+                    <a href="">金莎/</a>
+                    <a href="">阿杜/</a>
+                    <a href="">By2</a>
+                </td>
+                <td><a href="">《阿杜诚意跨厂牌超级精选》</a></td>
+                <td><p>04:24 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td><a href="details-page.html">发现爱</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a>
+                <a href="">金莎</a>
+                </td>
+                <td><a href="">《西界》</a></td>
+                <td><p>03:43 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td><a href="details-page.html">梦想的翅膀</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                    <td><a href="">林俊杰/</a>
+                        <a href="">金莎/</a>
+                        <a href="">阿杜/</a>
+                        <a href="">By2</a>
+                    </td>
+                <td><a href="">《梦想的翅膀》</a></td>
+                <td><p>04:24 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td><a href="details-page.html">距离</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《一克拉梦想 电视原声带》</a></td>
+                <td><p>04:14 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td><a href="details-page.html">跟屁虫</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>03:45 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td><a href="details-page.html">无聊</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>03:49 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td><a href="details-page.html">一个又一个</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:24 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td><a href="details-page.html">X</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:06 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td><a href="details-page.html">Still Moving Under Gunfire</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:06 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td><a href="details-page.html">妈妈的娜鲁娃</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>03:57 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td><a href="details-page.html">表达爱</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰/</a>
+                <a href="">廖君</a>
+                </td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>03:50 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td><a href="details-page.html">自由不变（动画电影《东海战》主题曲）</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《动画电影《东海战》影视原声》</a></td>
+                <td><p>04:27 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td><a href="details-page.html">无法克制</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>04:11 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td><a href="details-page.html">忘记</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《忘记》</a></td>
+                <td><p>03:57 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td><a href="details-page.html">忘记</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《2006就是俊杰世界巡回演唱会》</a></td>
+                <td><p>03:57 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td><a href="details-page.html">听见幸福</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a>
+                <a href="">/林宇中</a>
+                </td>
+                <td><a href="">《听见幸福》</a></td>
+                <td><p>03:07 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td><a href="details-page.html">自由不变</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:30 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td><a href="details-page.html">大男人·小女孩</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>03:49 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td><a href="details-page.html">L-O-V-E</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:09 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td><a href="details-page.html">Baby Baby</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>03:41 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td><a href="details-page.html">K-O</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《西界》</a></td>
+                <td><p>04:03 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td><a href="details-page.html">曙光</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《JJ林俊杰_100天》</a></td>
+                <td><p>00:45 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td><a href="details-page.html">听不懂没关系</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《2006就是俊杰世界巡回演唱会》</a></td>
+                <td><p>04:09 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td><a href="details-page.html">小说</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰/</a>
+                <a href="">阿杜</a>
+                </td>
+                <td><a href="">《阿杜诚意跨厂牌超级精选》</a></td>
+                <td><p>03:56 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td><a href="details-page.html">Hurray一起摇</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《Hurray一起摇》</a></td>
+                <td><p>02:15 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td><a href="details-page.html">大男人‧小女孩(新加坡新传媒电视剧《手足》插曲)</a>
+                    <span class="td-img"><img src="images/vip.png" alt=""></span>
+                    </td>
+                <td><a href="">林俊杰</a></td>
+                <td><a href="">《大男人小女孩》</a></td>
+                <td><p>03:47 </p><p class="tr-right">  
+                    <span class="s-four"><img src="images/play1.png" alt=""></span>
+                    <span class="s-one"><img src="images/收藏.png" alt=""></span>
+                    <span class="s-two"><img src="images/create-list.png" alt=""></span>
+                    <span class="s-three"><img src="images/分享.png" alt=""></span>
+                </p></td>
+            </tr>
+            </tbody>
+           </table>
+        </div>
+
+
+
+        <div id="cover">
+            <ul id="box2">
+                <li><a href="vieios.html"><img src="images/album1.jpg" alt=""></a>
+                    <p class="pone"> <a href="">JJ林俊杰_100天</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2009-12-18</a></p> 
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album2.jpg" alt=""></a>
+                    <p class="pone"><a href="">期待爱</a></p>
+                    <p class="ptwo"><a href="">林俊杰/</a><a href="">金莎</a></p> 
+                    <p class="pthree"><a href="">发行时间：2008-01-01</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album3.jpg" alt=""></a>
+                    <p class="pone"><a href="">西界</a></p>
+                    <p class="ptwo"><a href="">林俊杰</a></p> 
+                    <p class="pthree"><a href="">发行时间：2007-06-29</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album4.jpg" alt=""></a>
+                    <p class="pone"><a href="">《HOLD住爱》影视原声</a></p>
+                    <p class="ptwo"><a href="">林俊杰</a></p> 
+                    <p class="pthree"><a href="">发行时间：未知</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album5.jpg" alt=""></a>
+                    <p class="pone"> <a href="">梦想的翅膀</a> </p>
+                    <p class="ptwo"><a href="">林俊杰/</a> 
+                    <a href="">金莎/</a>
+                    <a href="">阿杜</a>
+                    </p> 
+                    <p class="pthree"><a href="">发行时间：2009-12-21</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album6.jpg" alt=""></a>
+                    <p class="pone"> <a href="">2006就是俊杰世界巡回演唱会</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2006-12-29</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album7.jpg" alt=""></a>
+                    <p class="pone"> <a href="">动画电影《东海战》影视原声</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2007-06-29</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album8.jpg" alt=""></a>
+                    <p class="pone"> <a href="">忘记</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2007-01-24</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album9.jpg" alt=""></a>
+                    <p class="pone"> <a href="">听见幸福</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2008-03-28</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album10.jpg" alt=""></a>
+                    <p class="pone"> <a href="">Hurray一起摇</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2007-11-28</a></p>
+                </li>
+                <li class="distence-left"><a href="vieios.html"><img src="images/album11.jpg" alt=""></a>
+                    <p class="pone"> <a href="">大男人小女孩</a> </p>
+                    <p class="ptwo"><a href="">林俊杰</a> </p> 
+                    <p class="pthree"><a href="">发行时间：2007-06-9</a></p>
+                </li>
+            </ul>
+        </div>
+    </div>
+        </div>
+        <div class="live">
+            <h3>相关直播推荐</h3>
+            <span>你已经被我一个人包围</span>
+        </div>
+        <div class="live-list">
+            <ul>
+                <li><a href="vieios.html"><img src="images/直播1.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                        直播中</span>
+                </a></li>
+                <li><a href="vieios.html"><img src="images/live2.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+                <li><a href="vieios.html"><img src="images/live3.jpg" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+                <li><a href="vieios.html"><img src="images/live4.png" alt="">
+                    <span class="living"><span class="living-spot">.</span>
+                    直播中</span>
+                </a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer1">
+            <div class="footer-main">
+                <div class="main-left">
+                    <div class="left-title">
+                        下载千千客户端
+                    </div>
+                    <div class="left-img">
+                        <ul id="boximg">
+                            <li>
+                                <a href="">
+                                    <div><img src="images/安卓.png" alt="">
+                                        <p>Android版</p>
+                                        </div>
+                                <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                                    <p>微信扫一扫</p>
+                                </span>
+                            </a>
+                        </li>
+                        <li><a href="">
+                            <div><img src="images/iphone.png" alt="">
+                            <p>iphone版</p>
+                        </div>
+                            <span id="li-img"><img src="images/微信扫一扫.jpg" alt="">
+                                <p>微信扫一扫</p>
+                            </span>
+                        </a>
+                    </li>
+                    <li><a href="">
+                        <div><img src="images/微软.png" alt="">
+                        <p>Window版</p>
+                        </div>
+                        <span></span>
+                    </a>
+                </li>
+                <li><a href="">
+                    <div><img src="images/mac.png" alt="">
+                    <p>MAC版</p>
+                    </div>
+                    <span></span>
+                </a>
+            </li>
+                        </ul>
+                    </div>
+                </div>
+    
+                <div class="main-center">
+                    <div class="center-title">
+                        关于千千音乐
+                    </div>
+                    <div class="center-info">
+                        <ul>
+                            <li>
+                                <a href="/feedback">意见反馈</a>
+                            </li>
+                            <li>
+                                <a href="/doc/contact">联系我们</a>
+                            </li>
+                            <li>
+                                <a href="https://www.dmhmusic.com">DMH数字音乐分发平台</a>
+                            </li>
+                            <li>
+                                <a href="">音乐人入驻</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="main-right">
+                    <div class="right-title">
+                        关注千千音乐
+                    </div>
+                    <div class="right-img">
+                        <ul id="boximg1">
+                            <li>
+                                <a href="http://e.weibo.com/musicbaidu">
+                                    <div>
+                                    <img src="images/microblog.png" alt="">
+                                    <span>关注微博 </span>
+                                </div>
+                                <span></span>
+                                <span></span>
+                            </a>
+                            </li>
+                            <li>
+                                <div>
+                                    <img src="images/wechat.png" alt="">
+                                   <span href="">微信公众号</span> 
+                                   <div id="div-img"><img src="images/微信扫一扫1.jpg" alt="">
+                                <p>微信扫一扫</p>
+                                </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer2">
+            <div class="footer2-main">
+                <div class="footer2-header">
+                    Copyright 2018 © .TAIHE MUSIC GROUP. 深圳太乐文化科技有限公司版权所有
+                </div>
+                <div class="footer2-center">
+                    <span class="sone">信息网络传播视听许可证: 1910523</span>
+                    <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=44030502002309">
+                        <img src="images/gongan.png" alt="">
+                        粤公网安备: 44030502002309号
+                    </a>
+                    <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlicp.jpeg">增值电信业务经营许可证（icp): 粤B2-20180819</a></span>
+                    <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlsp.jpg">增值电信业务经营许可证（sp): B2-20183486</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlwlwhjyj.jpeg">网络文化经营许可证号码: 粤网文【2021】0349-058号</a>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlcbwjy.jpeg">出版物经营许可证: 新出发深零字第0788号</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztldszz.jpeg">广播电视节目制作许可证: （粤）字第03091号</a></span>
+                <span><a target="_blank" href="https://static0-qianqian.taihe.com/img/sztlyyxyc.jpeg">营业性演出许可证: 440305120144</a></span>
+            </div>
+            <div class="footer2-footer">
+                <a href="mailto:jubao@taihe.com">举报邮箱: jubao@taihe.com</a>
+                <a href="/feedback">反馈中心</a>
+            </div>
+            </div>
+        </div>
+    </body>
+    </html> 
+    </body>
+    </html> 
