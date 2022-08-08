@@ -441,6 +441,25 @@
     /* background: yellowgreen; */
     height: 30px;
   }
+  .living{
+    width: 70px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    display: inline-block;
+    color: white;
+    font-size: 12px;
+    text-align: center;
+    line-height: 0px;
+    position: absolute;
+    left: 20px;
+    top: 20px;
+  }
+  .living-spot{
+    color: red;
+    font-size: 40px;
+  }
+  
 
   .live h3{
     font-size: 30px;
@@ -470,10 +489,12 @@
     height: 180px;
     float: left;
     padding: 9px;
+    position: relative;
   }
   .live-list li img{
     width: 285px;
   }
+  
   .footer1{
     background: #282828;
     margin-top: 45px;
